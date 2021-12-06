@@ -2,11 +2,11 @@ import java.io.File
 
 fun main() {
     val points = File("src/input5.txt").readLines().map { line -> line.split(" -> ").map { point -> point.split(',').map { coordinate -> coordinate.toInt() } } }
-    println(day4(points, false))
-    println(day4(points, true))
+    println(day5(points, false))
+    println(day5(points, true))
 }
 
-fun day4(points: List<List<List<Int>>>, checkDiagonals: Boolean): Int {
+fun day5(points: List<List<List<Int>>>, checkDiagonals: Boolean): Int {
     val grid = List(1000) { MutableList(1000) { 0 } }
     var answer = 0
     points.forEach { (start, end) ->
