@@ -136,8 +136,8 @@ class Scanner(val id: Int) {
             20 -> beacons.map { Beacon(-it.y, -it.z, it.x) }
 
             // x is now z-axis but flipped
-            21 -> beacons.map { Beacon(it.z,   it.y, -it.x) }
-            22 -> beacons.map { Beacon(it.y,  -it.z, -it.x) }
+            21 -> beacons.map { Beacon( it.z,  it.y, -it.x) }
+            22 -> beacons.map { Beacon( it.y, -it.z, -it.x) }
             23 -> beacons.map { Beacon(-it.z, -it.y, -it.x) }
             24 -> beacons.map { Beacon(-it.y,  it.z, -it.x) }
 
